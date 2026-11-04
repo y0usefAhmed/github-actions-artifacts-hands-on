@@ -28,12 +28,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: download text
+    - name: Download text file
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact
         path: ./artifacts
 
-    - name: read file
+    - name: isplay content of the text file
       run: cat ./artifacts/hello.txt
     
